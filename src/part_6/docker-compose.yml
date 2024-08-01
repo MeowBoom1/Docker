@@ -1,0 +1,9 @@
+services:
+  server:
+    build: ../part_5
+    tty: true
+  proxy:
+    build: .
+    ports:
+      - 80:8080
+    tty: true
